@@ -8,6 +8,9 @@ export default {
         "splash-light-purple": "#E70FAA",
         "splash-dark-purple": "#13B0F5",
       },
+      spacing: {
+        128: "567px",
+      },
     },
   },
   plugins: [],

@@ -1,6 +1,6 @@
 function StackSection() {
   return (
-    <div className="py-5 md:py-0 font-bold flex flex-col items-center ">
+    <div className=" py-22  md:py-28  font-bold flex flex-col items-center ">
       <p className="text-splash-purple text-center text-xl md:text-3xl lg:text-5xl">
         My Tech Stack
       </p>
@@ -29,7 +29,15 @@ function StackSection() {
           className="  lg:h-28 lg:w-28 sm:h-16 sm:w-16"
         />
         <img
+          src="./images/icons/expo.svg"
+          className="  lg:h-28 lg:w-28 sm:h-16 sm:w-16"
+        />
+        <img
           src="./images/icons/tailwind-css.svg"
+          className="  lg:h-28 lg:w-28 sm:h-16 sm:w-16"
+        />
+        <img
+          src="./images/icons/react-query.svg"
           className="  lg:h-28 lg:w-28 sm:h-16 sm:w-16"
         />
         <img
