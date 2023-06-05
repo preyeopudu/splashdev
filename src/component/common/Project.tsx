@@ -1,37 +1,54 @@
+import React from "react";
 import { FaLink, FaGithub } from "react-icons/fa";
-function Project() {
+
+interface ProjectProps {
+  name?: string;
+  image?: string;
+  description?: string;
+  link?: string;
+  stack?: string;
+  github?: string;
+}
+const Project: React.FC<ProjectProps> = ({
+  name,
+  image,
+  description,
+  link,
+  stack,
+  github,
+}) => {
   return (
-    <div className="shadow-2xl rounded-lg   pb-8 bg-white">
+    <div className=" hover:shadow-2xl shadow-xl rounded-lg   p bg-white  ">
       <img
-        src="./images/snap.png"
+        src={image}
         className="w-full object-cover object-top h-56"
         alt="Snap Image"
       />
       <div className="p-7">
-        <p className="text-lg lg:text-3xl font-medium truncate">
-          Project Title goes here
+        <p className="text-lg lg:text-3xl font-medium truncate">{name}</p>
+        <p className="font-light text-base md:text-lg my-7 h-36  line-clamp-3 ">
+          {description}
         </p>
-        <p className="font-light text-base md:text-lg py-7">
-          This is a sample project description. Random things are here in the
-          description. This is a sample project lorem ipsum generator for dummy
-          content.
-        </p>
-        <p className="font-normal text-sm md:text-base">
-          Tech Stack: Expo, React Native, React Query
-        </p>
+        <p className="font-normal text-sm md:text-base">Tech Stack: {stack}</p>
         <div className="flex justify-between py-7">
-          <div className="flex items-center gap-x-1">
+          <a href={link} className="flex items-center gap-x-1" target="blank">
             <FaLink className="w-4 h-4" />
-            <p className="text-base font-normal">Live Preview</p>
-          </div>
-          <div className="flex items-center gap-x-1">
-            <FaGithub className="w-4 h-4" />
-            <p className="text-base font-normal">View Code</p>
-          </div>
+            <p className="text-base font-normal underline">Live Preview</p>
+          </a>
+          {github && (
+            <a
+              href={github}
+              className="flex items-center gap-x-1"
+              target="blank"
+            >
+              <FaGithub className="w-4 h-4" />
+              <p className="text-base font-normal underline">View Code</p>
+            </a>
+          )}
         </div>
       </div>
     </div>
   );
-}
+};
 
 export default Project;

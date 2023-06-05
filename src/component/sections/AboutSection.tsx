@@ -1,6 +1,6 @@
 function AboutSection() {
   return (
-    <div className="flex py-0 flex-col md:flex-row-reverse items-center md:py-16 lg:py-36 flex-1 justify-between">
+    <div className="flex py-0 flex-col md:flex-row-reverse items-center md:py-16 lg:py-24 flex-1 justify-between">
       <div className=" md:justify-end flex py-5 flex-1">
         <img
           src="/images/profile.jpg"

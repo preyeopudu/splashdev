@@ -1,5 +1,6 @@
 import "./App.css";
 import Navbar from "./component/container/Navbar";
+import Footer from "./component/container/footer";
 import AboutSection from "./component/sections/AboutSection";
 import ProjectSection from "./component/sections/ProjectSection";
 import StackSection from "./component/sections/StackSection";
@@ -11,6 +12,7 @@ function App() {
       <AboutSection />
       <StackSection />
       <ProjectSection />
+      <Footer />
     </div>
   );
 }
