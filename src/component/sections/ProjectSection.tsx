@@ -3,7 +3,7 @@ import Project from "../common/Project";
 
 function ProjectSection() {
   return (
-    <div className="py-5 md:py-0 font-bold flex flex-col">
+    <div className="py-5 md:py-10 font-bold flex flex-col">
       <p className="text-splash-purple text-center text-xl md:text-3xl lg:text-5xl">
         Projects
       </p>

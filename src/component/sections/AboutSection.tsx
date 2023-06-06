@@ -13,7 +13,7 @@ function AboutSection() {
           <span className=" font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-splash-dark-purple to-splash-light-purple">
             Opudu Tamarapreye Micheal (splashdev)
           </span>{" "}
-          and i engineer solutions
+          and i engineer solutions 🧠
         </p>
       </div>
     </div>

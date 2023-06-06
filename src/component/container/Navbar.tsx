@@ -1,8 +1,10 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { FaBars, FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
+  const navigate = useNavigate();
   return (
     <nav className="py-5 ">
       {/* Desktop Navbar */}
@@ -11,15 +13,49 @@ const Navbar = () => {
           <img src="../../public/images/logo.png" className="h-16" alt="Logo" />
         </div>
         <div className="flex flex-1 justify-evenly gap-x-2 ">
-          <p className="whitespace-nowrap">Home</p>
-          <p className="whitespace-nowrap">About</p>
-          <p className="whitespace-nowrap">Tech Stack</p>
-          <p className="whitespace-nowrap">Projects</p>
-          <p>Contact</p>
+          <p
+            className="whitespace-nowrap hover:cursor-pointer"
+            onClick={() => navigate("/")}
+          >
+            Home
+          </p>
+          <p
+            className="whitespace-nowrap hover:cursor-pointer"
+            onClick={() => navigate("/about")}
+          >
+            About
+          </p>
+          <p
+            className="whitespace-nowrap hover:cursor-pointer"
+            onClick={() => navigate("/stack")}
+          >
+            Tech Stack
+          </p>
+          <p
+            className="whitespace-nowrap hover:cursor-pointer"
+            onClick={() => navigate("/projects")}
+          >
+            Projects
+          </p>
+          <p
+            className="whitespace-nowrap hover:cursor-pointer"
+            onClick={() => navigate("/contact")}
+          >
+            Contact
+          </p>
           <div className="flex gap-x-5">
-            <FaGithub className="h-6 w-6" />
-            <FaTwitter className="h-6 w-6" />
-            <FaLinkedin className="h-6 w-6" />
+            <a href="https://github.com/preyeopudu" target="blank">
+              <FaGithub className="h-6 w-6" />
+            </a>
+            <a href="https://twitter.com/splash__dev" target="blank">
+              {" "}
+              <FaTwitter className="h-6 w-6" />
+            </a>
+
+            <a href="https://www.linkedin.com/in/opudupreye/" target="blank">
+              {" "}
+              <FaLinkedin className="h-6 w-6" />
+            </a>
           </div>
         </div>
       </div>
@@ -47,9 +83,19 @@ const Navbar = () => {
           <p className="text-md font-medium py-3">Projects</p>
           <p className="text-md font-medium py-3">Contact</p>
           <div className=" gap-x-3.5 flex flex-row py-5 justify-evenly">
-            <FaGithub className="h-6 w-6" />
-            <FaTwitter className="h-6 w-6" />
-            <FaLinkedin className="h-6 w-6" />
+            <a href="https://github.com/preyeopudu" target="blank">
+              {" "}
+              <FaGithub className="h-6 w-6" />
+            </a>
+
+            <a href="https://twitter.com/splash__dev" target="blank">
+              {" "}
+              <FaTwitter className="h-6 w-6" />
+            </a>
+            <a href="https://www.linkedin.com/in/opudupreye/" target="blank">
+              {" "}
+              <FaLinkedin className="h-6 w-6" />
+            </a>
           </div>
         </div>
       </div>
