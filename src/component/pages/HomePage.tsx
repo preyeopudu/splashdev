@@ -1,4 +1,3 @@
-import React from "react";
 import AboutSection from "../sections/AboutSection";
 import StackSection from "../sections/StackSection";
 import ProjectSection from "../sections/ProjectSection";
