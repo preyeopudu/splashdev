@@ -1,10 +1,14 @@
 import { useState } from "react";
 import { FaBars, FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
-import { useNavigate } from "react-router-dom";
+import { To, useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   const navigate = useNavigate();
+  const handleChange = (destination: To) => {
+    navigate(destination);
+    setToggle(false);
+  };
   return (
     <nav className="py-5 ">
       {/* Desktop Navbar */}
@@ -33,7 +37,7 @@ const Navbar = () => {
           </p>
           <p
             className="whitespace-nowrap hover:cursor-pointer"
-            onClick={() => navigate("/projects")}
+            onClick={() => handleChange("/")}
           >
             Projects
           </p>
@@ -77,11 +81,36 @@ const Navbar = () => {
             !toggle ? "h-0" : "h-1/2"
           }  `}
         >
-          <p className="text-md font-medium py-3">Home</p>
-          <p className="text-md font-medium py-3">About</p>
-          <p className="text-md font-medium py-3">Tech Stack</p>
-          <p className="text-md font-medium py-3">Projects</p>
-          <p className="text-md font-medium py-3">Contact</p>
+          <p
+            className="text-md font-medium py-3"
+            onClick={() => handleChange("/")}
+          >
+            Home
+          </p>
+          <p
+            className="text-md font-medium py-3"
+            onClick={() => handleChange("/about")}
+          >
+            About
+          </p>
+          <p
+            className="text-md font-medium py-3"
+            onClick={() => handleChange("/stack")}
+          >
+            Tech Stack
+          </p>
+          <p
+            className="text-md font-medium py-3"
+            onClick={() => handleChange("/projects")}
+          >
+            Projects
+          </p>
+          <p
+            className="text-md font-medium py-3"
+            onClick={() => handleChange("/contact")}
+          >
+            Contact
+          </p>
           <div className=" gap-x-3.5 flex flex-row py-5 justify-evenly">
             <a href="https://github.com/preyeopudu" target="blank">
               {" "}

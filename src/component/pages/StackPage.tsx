@@ -1,4 +1,3 @@
-import React from "react";
 import StackSection from "../sections/StackSection";
 
 function StackPage() {

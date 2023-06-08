@@ -1,6 +1,9 @@
 import { FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 function Footer() {
+  const navigate = useNavigate();
+
   return (
     <footer className="  py-10 md:mt-6">
       <div className="flex  flex-col md:flex-row md:justify-between md:items-center">
@@ -22,13 +25,36 @@ function Footer() {
 
       <div className=" border-t-2 my-4 py-6 md:flex md:items-center md:justify-between">
         <div className="md:flex md:justify-between md:gap-x-3 lg:gap-x-8 md:items-center">
-          <p className=" text-splash-purple text-lg md:text-base">Home</p>
-          <p className=" text-splash-purple text-lg md:text-base">About</p>
-          <p className=" text-splash-purple text-lg md:text-base">
+          <p
+            onClick={() => navigate("/")}
+            className="  text-splash-purple text-lg md:text-base"
+          >
+            Home
+          </p>
+          <p
+            onClick={() => navigate("/about")}
+            className=" text-splash-purple text-lg md:text-base"
+          >
+            About
+          </p>
+          <p
+            onClick={() => navigate("/stack")}
+            className=" text-splash-purple text-lg md:text-base"
+          >
             Technologies
           </p>
-          <p className=" text-splash-purple text-lg md:text-base">Projects</p>
-          <p className=" text-splash-purple text-lg md:text-base">Contact</p>
+          <p
+            onClick={() => navigate("/projects")}
+            className=" text-splash-purple text-lg md:text-base"
+          >
+            Projects
+          </p>
+          <p
+            onClick={() => navigate("/contact")}
+            className=" text-splash-purple text-lg md:text-base"
+          >
+            Contact
+          </p>
         </div>
         <div>
           <p className=" text-lg text-gray-500 my-3 font-normal ">
