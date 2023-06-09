@@ -14,7 +14,7 @@ const Navbar = () => {
       {/* Desktop Navbar */}
       <div className="lg:flex flex-row justify-between items-center hidden">
         <div className="flex flex-1">
-          <img src="../../public/images/logo.png" className="h-16" alt="Logo" />
+          <img src="./images/logo.png" className="h-16" alt="Logo" />
         </div>
         <div className="flex flex-1 justify-evenly gap-x-2 ">
           <p
@@ -67,7 +67,7 @@ const Navbar = () => {
       {/* Mobile Navbar */}
       <div className="lg:hidden shadow-md rounded-sm  pt-3 px-3">
         <div className="flex flex-1 justify-between items-center py-3">
-          <img src="../../public/images/logo.png" className="h-10" alt="Logo" />
+          <img src="./images/logo.png" className="h-10" alt="Logo" />
           <div
             className="border rounded-md border-gray-400 px-3 py-1"
             onClick={() => setToggle(!toggle)}
