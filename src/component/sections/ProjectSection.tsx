@@ -7,7 +7,7 @@ function ProjectSection() {
       <p className="text-splash-purple text-center text-xl md:text-3xl lg:text-5xl">
         Projects
       </p>
-      <p className="text-center font-normal text-slate-500 my-2 md:text-lg">
+      <p className="text-center font-normal text-slate-500 text-xl my-2 md:text-lg">
         Top projects I've worked on (web and mobile)
       </p>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-20 mt-20">

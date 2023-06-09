@@ -4,11 +4,11 @@ function AboutSection() {
       <div className=" md:justify-end flex py-5 flex-1">
         <img
           src="/images/profile.jpg"
-          className=" w-36 h-36 border-transparent bg-gradient-to-t from-splash-dark-purple to-splash-light-purple lg:h-80 lg:w-80  md:h-44 md:w-44 border-4 lg:border-8 object-cover rounded-full"
+          className=" w-48 h-48 border-transparent bg-gradient-to-t from-splash-dark-purple to-splash-light-purple lg:h-80 lg:w-80  md:h-44 md:w-44 border-4 lg:border-8 object-cover rounded-full"
         />
       </div>
       <div className="flex-1 justify-center">
-        <p className=" py-4  text-center text-splash-purple font-bold  text-xl md:text-left md:text-3xl lg lg:text-6xl">
+        <p className=" py-4  text-center text-splash-purple font-bold  text-2xl md:text-left md:text-3xl lg lg:text-6xl">
           Hi 👋, I'm{" "}
           <span className=" font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-splash-dark-purple to-splash-light-purple">
             Opudu Tamarapreye Micheal (splashdev)
