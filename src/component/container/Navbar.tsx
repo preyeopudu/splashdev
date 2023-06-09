@@ -37,7 +37,7 @@ const Navbar = () => {
           </p>
           <p
             className="whitespace-nowrap hover:cursor-pointer"
-            onClick={() => handleChange("/")}
+            onClick={() => handleChange("/projects")}
           >
             Projects
           </p>
