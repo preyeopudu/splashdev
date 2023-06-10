@@ -27,37 +27,37 @@ function Footer() {
         <div className="md:flex md:justify-between md:gap-x-3 lg:gap-x-8 md:items-center">
           <p
             onClick={() => navigate("/")}
-            className="  text-splash-purple text-lg md:text-base"
+            className="  text-splash-purple text-base md:text-base"
           >
             Home
           </p>
           <p
             onClick={() => navigate("/about")}
-            className=" text-splash-purple text-lg md:text-base"
+            className=" text-splash-purple text-base md:text-base"
           >
             About
           </p>
           <p
             onClick={() => navigate("/stack")}
-            className=" text-splash-purple text-lg md:text-base"
+            className=" text-splash-purple text-base md:text-base"
           >
             Technologies
           </p>
           <p
             onClick={() => navigate("/projects")}
-            className=" text-splash-purple text-lg md:text-base"
+            className=" text-splash-purple text-base md:text-base"
           >
             Projects
           </p>
           <p
             onClick={() => navigate("/contact")}
-            className=" text-splash-purple text-lg md:text-base"
+            className=" text-splash-purple text-base md:text-base"
           >
             Contact
           </p>
         </div>
         <div>
-          <p className=" text-lg text-gray-500 my-3 font-normal ">
+          <p className=" text-base text-gray-500 my-3 font-normal ">
             built by{" "}
             <span className="font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-splash-dark-purple to-splash-light-purple">
               Splashdev{" "}
