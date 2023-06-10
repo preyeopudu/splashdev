@@ -12,7 +12,7 @@ export const projects = [
     image: "./images/splashconnect.png",
     stack: "ReactJs,Tailwind,Sanity,Typescript",
     github: "https://github.com/preyeopudu/splash_connect",
-    link: "https://play.google.com/store/apps/details?id=com.splashdev.greatlight&hl=en",
+    link: "https://splashconnect.netlify.app/",
     description:
       "Splash Connect is a vibrant social platform designed to connect people through the power of visual storytelling. With Splash Connect, users can easily share and discover stunning images, engage with others through comments, and build a community around their passions and interests.",
   },
