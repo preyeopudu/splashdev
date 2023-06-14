@@ -20,7 +20,7 @@ export const projects = [
     name: "Greatlight",
     image: "./images/greatlight.webp",
     stack: "React native,expo,Nodejs.",
-    link: "https://play.google.com/store/apps/details?id=com.moohub.safenaija",
+    link: "https://play.google.com/store/apps/details?id=com.splashdev.greatlight",
     description:
       "Great light Investments is a crypto and forex trading company that provides passive income for its partners.",
   },
@@ -40,14 +40,5 @@ export const projects = [
     link: "https://play.google.com/store/apps/details?id=io.ionic.BillionTraderx&hl=en",
     description:
       "Billion Traderx is a crypto syndicate set up solely on bitcore(BTX) cryptocurrency commercialism, which also provides an opportunity of dividend for low income earners and proficient investors.",
-  },
-  {
-    name: "Splash Board",
-    image: "./images/splashboard.svg",
-    stack: "ReactJs,Tailwind,Typescript,react query",
-    github: "https://github.com/preyeopudu/splashboard",
-    link: "    https://splashboard.netlify.app/",
-    description:
-      "Splash Board is an example of admin website created by me to showcase my web development skills",
   },
 ];
