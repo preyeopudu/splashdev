@@ -1,10 +1,17 @@
 const roles = [
   {
+    title: "Full Stack Engineer",
+    institute: "Nubis Company",
+    location: "lagos",
+    type: "Contract",
+    date: "June 2022 to now",
+  },
+  {
     title: "Mobile developer",
     institute: "Moo hub technologies",
     location: "lagos",
     type: "full time",
-    date: "Dec 2022 to now",
+    date: "Dec 2022 to June 2022",
   },
   {
     title: "Mobile developer",
