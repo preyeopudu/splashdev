@@ -7,6 +7,16 @@ export const projects = [
     description:
       "Safenaija is a user-friendly app designed to help keep you safe and informed while in Nigeria. With the increasing security challenges faced by individuals and organizations, Safenaija is the perfect app to have on your phone to stay informed and take necessary precautions.",
   },
+
+  {
+    name: "Tic-tac-toe",
+    image: "./images/tic-tac-toe.jpg",
+    stack: "ReactJs,Tailwind,Typescript,DSA",
+    github: "https://github.com/preyeopudu/tic-tac-toe",
+    link: "https://splashs-tic-tac-toe.netlify.app/",
+    description:
+      "This dynamic project features a responsive design, intelligent AI opponent, and real-time score tracking. Developed",
+  },
   {
     name: "Splash Connect",
     image: "./images/splashconnect.png",
