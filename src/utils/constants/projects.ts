@@ -26,6 +26,16 @@ export const projects = [
     description:
       "Splash Connect is a vibrant social platform designed to connect people through the power of visual storytelling. With Splash Connect, users can easily share and discover stunning images, engage with others through comments, and build a community around their passions and interests.",
   },
+
+  {
+    name: "Splash Dashboard",
+    image: "./images/board.svg",
+    stack: "ReactJs,Tailwind,Apisauce,Typescript,react query",
+    github: "https://github.com/preyeopudu/splashboard",
+    link: "https://splashboard.netlify.app/",
+    description:
+      "Splashboard is an admin dashboard built to be pixel perfect from a Figma design and to make seamless api calls",
+  },
   {
     name: "Greatlight",
     image: "./images/greatlight.webp",
